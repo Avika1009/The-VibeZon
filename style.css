@@ -1,0 +1,100 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffb347, #ffcc33);
+    color: #333;
+}
+  
+.header {
+    background-color: #fe5d00;
+    color: white;
+    padding: 4em;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #ecba06;
+    padding: 1rem;
+    gap: 2rem;
+}
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+  
+.navbar a:hover {
+    transform: scale(1.1);
+}
+  
+.section {
+    padding: 2rem;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+  
+.gallery-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+  
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+  
+button {
+    background-color: #ff8000;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: #e67300;
+}
+  
+footer {
+    background: #ff9900;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+.fade-in {
+    animation-name: fadeIn;
+}
+  
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+  
+.slide-up {
+    animation-name: slideUp;
+}
